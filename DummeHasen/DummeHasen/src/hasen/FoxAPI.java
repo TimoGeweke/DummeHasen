@@ -17,20 +17,20 @@ public class FoxAPI {
     
     }
     
-  /*  public static void MoveFox(){
+    public static void MoveFox(){
         
         if(BPosY > FPosY){
             Spielfeld[FPosY][FPosX] = "0";
-            FPosY--;
+            FPosY++;
             Spielfeld[FPosY][FPosX] = "2";
         }
         
     else if(BPosY < FPosX){
          Spielfeld[FPosY][FPosX] = "0";
-         FPosY++;
+         FPosY--;
          Spielfeld[FPosY][FPosX] = "2";   
     }         
-        
+      
         
         
         
@@ -39,5 +39,5 @@ public class FoxAPI {
     
     
     
-    */
+    
 }

@@ -2,6 +2,7 @@ package hasen;
 
 import static hasen.Main.*;
 import static hasen.PlaygroundGenerator.*;
+import static hasen.FoxAPI.*;
 import java.io.IOException;
 
 public class BunnyAPI {
@@ -30,6 +31,7 @@ public class BunnyAPI {
                 BPosY --;
                 Spielfeld[BPosY][BPosX] = "1";
                 
+                MoveFox();
                 ResetFrame();
             }
         }
@@ -44,6 +46,7 @@ public class BunnyAPI {
                 BPosY ++;
                 Spielfeld[BPosY][BPosX] = "1";
                 
+                MoveFox();
                 ResetFrame();
             }   
         }
@@ -58,6 +61,7 @@ public class BunnyAPI {
                 BPosX --;
                 Spielfeld[BPosY][BPosX] = "1";
             
+                MoveFox();
                 ResetFrame();
             }   
         }public static void MoveRight() {
@@ -71,6 +75,7 @@ public class BunnyAPI {
                 BPosX ++;
                 Spielfeld[BPosY][BPosX] = "1";
             
+                MoveFox();
                 ResetFrame();
             }   
         }
