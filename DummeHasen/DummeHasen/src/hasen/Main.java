@@ -3,6 +3,7 @@ package hasen;
 import static hasen.BunnyAPI.*;
 import static hasen.BaseFrame.*;
 import static hasen.PlaygroundGenerator.*;
+import static hasen.FoxAPI.*;
 
 import java.io.IOException;
 
@@ -19,6 +20,7 @@ public class Main {
         
         CreatePlayground();
         PlaceBunnys();
+        PlaceFox();
         GenerateFrame();
         GenerateVisualArray();
         
