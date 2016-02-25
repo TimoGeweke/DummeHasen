@@ -18,7 +18,7 @@ public class BaseFrame {
     static JButton WalkUp = new JButton("UP");
     static JButton WalkDown = new JButton("DOWN");
     static JButton UseItem = new JButton("ITEM");
-     
+   // static JButton NewGame = new JButton("You lost! New Game?");
     
     public static void GenerateFrame() {
         
@@ -63,11 +63,25 @@ public class BaseFrame {
             } 
         });
         
+       
+         
+      /*  NewGame.setBounds(400, 400, 200, 60);
+        NewGame.setVisible(false);
+        NewGame.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+              NewGame();  
+            } 
+        });*/
+        
+         
+        
         Frame.add(WalkRight);
         Frame.add(WalkLeft);
         Frame.add(WalkUp);
         Frame.add(WalkDown);
         Frame.add(UseItem);
+       // Frame.add(NewGame);
         Frame.setVisible(true);
                 
     }
